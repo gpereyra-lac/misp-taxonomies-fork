@@ -764,6 +764,11 @@
       "version": 4
     },
     {
+      "description": "Collection status of RIPE Atlas measurements created or imported from MISP.",
+      "name": "ripe-atlas",
+      "version": 1
+    },
+    {
       "description": "Reference Security Incident Classification Taxonomy",
       "name": "rsit",
       "version": 1003
@@ -925,5 +930,5 @@
     }
   ],
   "url": "https://raw.githubusercontent.com/MISP/misp-taxonomies/main/",
-  "version": "20260828"
+  "version": "20260913"
 }
