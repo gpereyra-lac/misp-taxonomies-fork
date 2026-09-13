@@ -1,0 +1,57 @@
+{
+  "namespace": "ripe-atlas",
+  "description": "Collection status of RIPE Atlas measurements created or imported from MISP.",
+  "version": 1,
+  "expanded": "RIPE Atlas",
+  "predicates": [
+    {
+      "value": "status",
+      "expanded": "Status",
+      "description": "Collection status of the measurement.",
+      "exclusive": true,
+      "uuid": "7cb9a1c1-4261-51ab-801a-bae80163b489"
+    }
+  ],
+  "values": [
+    {
+      "predicate": "status",
+      "entry": [
+        {
+          "value": "pending",
+          "expanded": "Pending",
+          "description": "The measurement has been launched and its results have not been collected yet.",
+          "colour": "#f0ad4e",
+          "uuid": "7771501d-a531-5ebd-8f3c-bc767bfebd67"
+        },
+        {
+          "value": "collected",
+          "expanded": "Collected",
+          "description": "The measurement results have been collected and the measurement is complete.",
+          "colour": "#5cb85c",
+          "uuid": "e4f08378-0365-5dff-8f0a-8870f1538a5c"
+        },
+        {
+          "value": "partial",
+          "expanded": "Partial",
+          "description": "Partial results have been collected; the measurement may still return more.",
+          "colour": "#5bc0de",
+          "uuid": "c02e7a6c-157d-590d-9476-5ae32238ac51"
+        },
+        {
+          "value": "failed",
+          "expanded": "Failed",
+          "description": "The measurement failed or was stopped without delivering usable results.",
+          "colour": "#d9534f",
+          "uuid": "757fb8e4-4a76-5bb3-b87f-14a7e9fd7f9d"
+        },
+        {
+          "value": "imported",
+          "expanded": "Imported",
+          "description": "The measurement was not launched from MISP; its measurement ID was entered manually.",
+          "colour": "#777777",
+          "uuid": "78869190-895b-5cb4-9a0a-b55d69590083"
+        }
+      ]
+    }
+  ]
+}
